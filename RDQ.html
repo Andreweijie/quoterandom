@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Random Quote Machine</title>
+
+    <!-- Bootstrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link type="text/css" rel="stylesheet" href="RDQ.css">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Monoton|Josefin+Slab|Patua+One|Lobster|Cabin|Lemonada|Raleway|Tangerine:bold,bolditalic|Inconsolata:italic|Droid+Sans|Play|Lobster+Two|VT323|Pacifico">
+    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <script src="jquery-3.1.1.min.js"></script>
+    <script src="RDQ.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+     <div>
+         <h1 class="text-center name">QuoteR(andom)</h1>
+        <div class="quote">
+            <h1 class="text-center"><i class="fa fa-quote-left"></i><span id = "remove">{quote}</span><span id="quote"></span><i class="fa fa-quote-right"></i></h1>
+            <footer class="pull-right" id="source"></footer>
+        </div>
+         <div class="row">
+             <div class="col-xs-6">
+                <button id ="quotebtn" class="btn pull-right"><span class="fa fa-comment"></span></button>
+             </div>
+             <div class="col-xs-6">
+                 <a class="popup"><button class="btn"><span id = "twitter" class="fa fa-twitter"></span></button></a>
+             </div>
+         </div>
+    </div>
+    <footer id="by" class="text-center">By <span id="name">Andreweijie</span></footer>
+    <!-- /.container -->
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    
+</body>
+
+</html>

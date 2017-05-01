@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  vertical-align: baseline;
+}
+body {
+    background-color: black;
+}
+
+div {
+  position:relative;
+  z-index: 2;
+}
+
+h1 {
+  color:white;
+  font-family:VT323;
+  font-size:45px;
+}
+.btn {
+    background-color:black;
+    color: white;
+    font-size:24px;
+}
+
+.btn:hover {
+    color:white;
+}
+
+.btn:focus {
+    outline: 0 !important;
+}
+.quote {
+  position:relative;
+  margin:8% auto auto auto;
+  width:450px;
+  padding:40px 50px;
+  display:table;
+}
+
+.name {
+    font-family: Lobster;
+    font-size: 80px;
+}
+
+#source {
+    color:white;
+    font-family:VT323;
+    font-size:18px;
+}
+
+#by {
+    color:aliceblue;
+    font-family:Lobster TWo;
+    font-size:30px;
+    margin-bottom: 30px;
+}
+
+#name {
+    color:silver;
+}
+
+#twitter {
+    color:aqua;
+    font-size: 30px;
+}
