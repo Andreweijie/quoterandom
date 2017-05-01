@@ -4,6 +4,7 @@ var colors = ['#D81B60', '#E53935', '#8E24AA', '#5E35B1', '#3949AB', '#1E88E5', 
 $(document).ready(function () {
     
     var param = "";
+    var answer = $('.quote');
     
      $("#quotebtn").click(function () {
         var color = Math.floor(Math.random() * colors.length);
@@ -12,13 +13,15 @@ $(document).ready(function () {
         $(".btn").css("color", "white");
         
         $(".quote h1, #source").fadeOut("slow", function () {
-            $.getJSON("http://api.forismatic.com/api/1.0/?method=getQuote&lang=en&format=jsonp&jsonp=?", function (quote) {
-                $("#remove").remove();
-                $("#quote").html(" " + quote["quoteText"] + " ");
+          $(".quote").toggleClass(".quoteEx")
+            $.getJSON("http://quotes.stormconsultancy.co.uk/random.json?callback=?", function (quote) {
+                $("#quote").html(" " + quote.quote + " ");
                 $("#source").html("-" + quote.author).fadeIn("slow");
                 $(".quote h1").fadeIn("slow");
+                       answer.slideToggle(500);
+
                 
-               param = quote["quoteText"];
+                param = quote.quote;
             });
         });
     });

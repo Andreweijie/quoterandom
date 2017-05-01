@@ -5,7 +5,7 @@
   vertical-align: baseline;
 }
 body {
-    background-color: black;
+    background-color: #D81B60;
 }
 
 div {
@@ -15,17 +15,19 @@ div {
 
 h1 {
   color:white;
-  font-family:VT323;
-  font-size:45px;
+  font-family: Arvo;
+  font-size:35px;
 }
 .btn {
-    background-color:black;
-    color: white;
-    font-size:24px;
+    background-color: #D81B60;
+    color:white;
+    font-family: Arvo;
+    border:solid white;
+    font-size:2em;
 }
 
 .btn:hover {
-    color:white;
+  color:black;
 }
 
 .btn:focus {
@@ -33,15 +35,20 @@ h1 {
 }
 .quote {
   position:relative;
-  margin:8% auto auto auto;
-  width:450px;
+  margin:0% auto auto auto;
+  width:650px;
   padding:40px 50px;
   display:table;
+  border:solid white;
+}
+
+.row {
+  margin:5%;
 }
 
 .name {
-    font-family: Lobster;
-    font-size: 80px;
+  font-family:Lobster;
+  font-size:70px;
 }
 
 #source {
@@ -65,3 +72,4 @@ h1 {
     color:aqua;
     font-size: 30px;
 }
+

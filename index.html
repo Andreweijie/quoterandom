@@ -11,7 +11,9 @@
     <!-- Bootstrap -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link type="text/css" rel="stylesheet" href="RDQ.css">
-    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Monoton|Josefin+Slab|Patua+One|Lobster|Cabin|Lemonada|Raleway|Tangerine:bold,bolditalic|Inconsolata:italic|Droid+Sans|Play|Lobster+Two|VT323|Pacifico">
+   
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Monoton|Josefin+Slab|Patua+One|Lobster|Lemonada|Raleway|Tangerine:bold,bolditalic|Inconsolata:italic|Droid+Sans|Lobster+Two|Rokkitt|VT323|Arvo">
+    
     <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
     <script src="jquery-3.1.1.min.js"></script>
     <script src="RDQ.js"></script>
@@ -25,28 +27,23 @@
 </head>
 
 <body>
-     <div>
-         <h1 class="text-center name">QuoteR(andom)</h1>
-        <div class="quote">
-            <h1 class="text-center"><i class="fa fa-quote-left"></i><span id = "remove">{quote}</span><span id="quote"></span><i class="fa fa-quote-right"></i></h1>
+     
+<div>
+  <h1 class="text-center name">QuoteR(andom)</h1>
+  <div class="row">
+             <div class="col-xs-6">
+                <button id ="quotebtn" class="btn pull-right"><span class="fa fa-comment"></span> New Quote</button>
+             </div>
+             <div class="col-xs-6">
+                 <a class="popup" href="http://twitter.com/share"><button class="btn"><span id = "twitter" class="fa fa-twitter"></span> Tweet It!</button></a>
+             </div>
+         </div>      
+  <div class="quote">
+            <h1 class="text-center"><i class="fa fa-quote-left"></i><span id="quote">(quote)</span><i class="fa fa-quote-right"></i></h1>
             <footer class="pull-right" id="source"></footer>
         </div>
-         <div class="row">
-             <div class="col-xs-6">
-                <button id ="quotebtn" class="btn pull-right"><span class="fa fa-comment"></span></button>
-             </div>
-             <div class="col-xs-6">
-                 <a class="popup"><button class="btn"><span id = "twitter" class="fa fa-twitter"></span></button></a>
-             </div>
-         </div>
     </div>
     <footer id="by" class="text-center">By <span id="name">Andreweijie</span></footer>
-    <!-- /.container -->
-
-
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     
 </body>
 
